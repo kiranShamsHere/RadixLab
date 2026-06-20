@@ -49,3 +49,4 @@ ehthumbs.db
 # AI Studio / Template Metadata (Local-only workspace files)
 metadata.json
 firebase-applet-config.json
+assets/.aistudio/
