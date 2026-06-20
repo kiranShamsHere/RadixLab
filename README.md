@@ -55,6 +55,50 @@ RadixLab is designed around maximum developer productivity:
 
 ---
 
+## 📁 Project Structure
+
+Below is an overview of the directory organization in RadixLab:
+
+```text
+radix-lab/
+├── assets/                  # Public visual configuration artifacts & graphics
+├── src/
+│   ├── components/          # Modularized view panels & layout wrappers
+│   │   ├── AsciiUnicodeView.tsx        # Glyph mapping & character index reference
+│   │   ├── Base64View.tsx              # Complex string & URL encoder/decoder
+│   │   ├── BatchConvertView.tsx        # Bulk CSV data pipeline & input processor
+│   │   ├── BinaryTreeView.tsx          # Interactive traversal renderer (DFS/BFS)
+│   │   ├── BitPatternsView.tsx         # Active bitwise logical mask playground 
+│   │   ├── BytesBitsView.tsx           # Multi-byte structure & array visual inspector
+│   │   ├── CalculatorView.tsx          # Dynamic basic calculator keypad overlay
+│   │   ├── ColorConverterView.tsx      # HEX, RGB, HSL & CMYK interactive color decoder
+│   │   ├── ConverterView.tsx           # Standard radix, floating-point & negative module
+│   │   ├── EducationalView.tsx         # Complement formulas & float reference sheet
+│   │   ├── ErrorBoundary.tsx           # Runtime fault isolation layer
+│   │   ├── HashGeneratorView.tsx       # Cryptographic hashes (MD5, SHA1, SHA256)
+│   │   ├── HistoryView.tsx             # Interactive, filterable action history ledger
+│   │   ├── IEEE754View.tsx             # Floating point parser & mantissa calculator
+│   │   ├── NumberLineView.tsx          # Zoomable real-time fractional pointer line
+│   │   ├── RegexTesterView.tsx         # Live regular expression patterns analyzer
+│   │   ├── ScientificCalculatorView.tsx# Trigonometric & arithmetic sandbox
+│   │   ├── SignedComplementView.tsx    # Sign-Magnitude, 1s & 2s complement generator
+│   │   └── UuidGeneratorView.tsx       # Batch UUID v4 structural compiler
+│   ├── utils/               # High-performance algorithmic calculators
+│   │   ├── converter.ts                # Custom arithmetic parsing engines
+│   │   ├── haptics.ts                  # Responsive user feedback triggers
+│   │   ├── mathSteps.ts                # Multi-step radix conversion walk-through builder
+│   │   └── speech.ts                   # Dictation input utilities
+│   ├── App.tsx              # Main orchestrator & routing state controller
+│   ├── main.tsx             # React entry point mounting tree
+│   ├── types.ts             # Shared layout contracts & static definitions
+│   └── index.css            # Tailwind CSS input and customized theme layers
+├── index.html               # Custom HTML entrypoint with metadata
+├── package.json             # Manifest declaring dependencies & runtime run scripts
+└── tsconfig.json            # TypeScript type compiler configuration
+```
+
+---
+
 ## 🔧 Getting Started
 
 ### Prerequisites
