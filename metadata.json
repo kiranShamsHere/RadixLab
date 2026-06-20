@@ -1,6 +1,0 @@
-{
-  "name": "RadixLab",
-  "description": "RadixLab is a professional, high-fidelity developer suite for multi-radix conversions, IEEE-754 analyzer, digital logic encodings, interactive visualization tree playrooms, and cryptographic hash generators.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
