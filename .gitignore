@@ -1,9 +1,51 @@
+# Dependency directories
 node_modules/
-build/
+
+# Build and distribution
 dist/
+build/
+out/
+.cache/
 coverage/
-.DS_Store
+*.lcov
+
+# Logs
+logs
 *.log
-.env*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.tsgp
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.cproject
+.settings/
+*.launch
+*.sublime-workspace
+.vscode/
+*.code-workspace
+
+# Local environment files (contains secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 !.env.example
+
+# AI Studio / Template Metadata (Local-only workspace files)
 metadata.json
+firebase-applet-config.json
