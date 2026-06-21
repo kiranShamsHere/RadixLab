@@ -62,9 +62,28 @@ export default function BitPatternsView() {
 
       {/* Bit pattern grid boxes */}
       <div className="bg-slate-950 border border-slate-800 rounded-lg p-6 mb-6">
-        <div className="flex justify-between items-center text-[10px] uppercase font-bold text-slate-450 mb-4 font-mono">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-[10px] uppercase font-bold text-slate-400 mb-4 font-mono gap-2">
           <span>Bit index mapping (MSB to LSB)</span>
-          <span className="text-indigo-400">Click bit boxes to toggle!</span>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setBits(Array(bitWidth).fill(0))}
+              className="px-2 py-1 bg-slate-900 border border-slate-800 hover:border-slate-700 text-[9px] font-bold tracking-wider rounded text-slate-400 hover:text-slate-100 cursor-pointer transition"
+            >
+              All 0s
+            </button>
+            <button
+              onClick={() => setBits(Array(bitWidth).fill(1))}
+              className="px-2 py-1 bg-slate-900 border border-slate-800 hover:border-indigo-750 text-[9px] font-bold tracking-wider rounded text-slate-400 hover:text-indigo-400 cursor-pointer transition"
+            >
+              All 1s
+            </button>
+            <button
+              onClick={() => setBits(bits.map(b => b === 0 ? 1 : 0))}
+              className="px-2 py-1 bg-slate-900 border border-slate-800 hover:border-indigo-750 text-[9px] font-bold tracking-wider rounded text-slate-400 hover:text-indigo-400 cursor-pointer transition"
+            >
+              Invert
+            </button>
+          </div>
         </div>
 
         <div className="flex flex-wrap gap-2.5 justify-center">

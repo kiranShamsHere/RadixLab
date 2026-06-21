@@ -30,8 +30,8 @@ export default function BinaryTreeView() {
     };
 
     if (quotient > 0) {
-      node.left = { value: quotient, step: `Quotient: ${quotient}` };
-      node.right = { value: rem, step: `Remainder (Bit): ${rem}` };
+      node.left = buildDecompositionTree(quotient);
+      node.right = { value: rem, step: `Bit (Remainder): ${rem}` };
     }
     return node;
   };
