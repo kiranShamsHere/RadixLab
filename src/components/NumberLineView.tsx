@@ -19,7 +19,7 @@ export default function NumberLineView() {
         Interactive Number Line Visualizer
       </h2>
 
-      <p className="text-xs text-slate-450 mb-6 font-sans">
+      <p className="text-xs text-slate-400 mb-6 font-sans">
         Explore signed integer coordinates across an 8-bit range, tracking boundary margins and midpoints.
       </p>
 

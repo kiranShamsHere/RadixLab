@@ -20,7 +20,8 @@ export type SelectedView =
   | 'bitpatterns'
   | 'numberline'
   | 'binarytree'
-  | 'bytesbits';
+  | 'bytesbits'
+  | 'analytics';
 
 export type BaseType = '2' | '8' | '10' | '16' | 'custom';
 

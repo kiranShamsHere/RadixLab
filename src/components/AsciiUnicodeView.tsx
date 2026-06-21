@@ -39,7 +39,7 @@ export default function AsciiUnicodeView() {
         ASCII & Unicode Character Encoder
       </h2>
 
-      <p className="text-xs text-slate-450 mb-6">
+      <p className="text-xs text-slate-400 mb-6">
         Convert arbitrary text lines to multi-base byte arrays, individual code points, and safe HTML entity encodings.
       </p>
 
@@ -58,7 +58,7 @@ export default function AsciiUnicodeView() {
 
       {results.length > 0 && (
         <div className="space-y-4">
-          <h3 className="text-[10px] uppercase font-bold text-slate-350 tracking-wider">
+          <h3 className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">
             Bit Encodings Grid List
           </h3>
 
@@ -94,7 +94,7 @@ export default function AsciiUnicodeView() {
                 </div>
 
                 <div className="flex justify-between items-center pt-2 border-t border-slate-850/50">
-                  <span className="text-[10px] text-slate-504 text-slate-450">HTML Entity: {r.entity}</span>
+                  <span className="text-[10px] text-slate-400">HTML Entity: {r.entity}</span>
                   <button
                     onClick={() => copyToClipboard(r.bin, index)}
                     className="text-[10px] text-indigo-400 font-bold flex items-center gap-1 cursor-pointer hover:text-indigo-300"

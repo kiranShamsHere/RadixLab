@@ -1,0 +1,19 @@
+{
+  "name": "RadixLab - Interactive Radix Converter & Developer Suite",
+  "short_name": "RadixLab",
+  "description": "Premium multi-radix conversion and computer architecture developer toolset",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060813",
+  "theme_color": "#060813",
+  "orientation": "any",
+  "categories": ["developer", "utilities", "education"],
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

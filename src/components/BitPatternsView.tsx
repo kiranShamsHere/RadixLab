@@ -41,7 +41,7 @@ export default function BitPatternsView() {
         Interactive Binary Bit Grid Patterns
       </h2>
 
-      <p className="text-xs text-slate-450 mb-6 font-sans">
+      <p className="text-xs text-slate-400 mb-6 font-sans">
         Toggle individual bits in register buses below to see real-time logic shifts for unsigned and signed numbers.
       </p>
 
@@ -52,7 +52,7 @@ export default function BitPatternsView() {
             key={w}
             onClick={() => changeBitWidth(w as 8 | 16 | 32)}
             className={`flex-1 text-[11px] uppercase tracking-wider font-bold transition-all cursor-pointer ${
-              bitWidth === w ? 'bg-indigo-650 bg-indigo-600 text-white' : 'bg-slate-950 text-slate-400 hover:bg-slate-900'
+              bitWidth === w ? 'bg-indigo-600 text-white' : 'bg-slate-950 text-slate-400 hover:bg-slate-900'
             }`}
           >
             {w}-Bit Width
@@ -114,7 +114,7 @@ export default function BitPatternsView() {
         {/* Binary */}
         <div className="bg-slate-950 border border-slate-800 rounded-lg p-4 font-mono">
           <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider block mb-1">Binary Array</span>
-          <span className="text-xs font-bold text-emerald-450 text-emerald-400 break-all">{bits.join('')}</span>
+          <span className="text-xs font-bold text-emerald-400 break-all">{bits.join('')}</span>
         </div>
 
         {/* Unsigned Decimal */}

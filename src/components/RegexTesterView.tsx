@@ -68,7 +68,7 @@ export default function RegexTesterView() {
         DLD Pattern Regex Tester
       </h2>
 
-      <p className="text-xs text-slate-450 mb-6 font-sans">
+      <p className="text-xs text-slate-400 mb-6 font-sans">
         Validate custom regular expression layouts and capture logical group structures over message buffers.
       </p>
 
@@ -123,7 +123,7 @@ export default function RegexTesterView() {
         </div>
 
         {errorMessage && (
-          <div className="p-3 bg-rose-955 border border-rose-800 text-rose-400 rounded-lg text-xs flex items-center gap-2 font-semibold">
+          <div className="p-3 bg-rose-950 border border-rose-800 text-rose-400 rounded-lg text-xs flex items-center gap-2 font-semibold">
             <AlertTriangle className="w-4 h-4" />
             <span>{errorMessage}</span>
           </div>
@@ -156,7 +156,7 @@ export default function RegexTesterView() {
                 {matches.map((item, idx) => (
                   <div
                     key={idx}
-                    className="p-3 bg-slate-955 border border-slate-800 rounded-lg flex flex-col font-mono text-xs gap-1.5"
+                    className="p-3 bg-slate-950 border border-slate-800 rounded-lg flex flex-col font-mono text-xs gap-1.5"
                   >
                     <div className="flex justify-between items-center">
                       <span className="text-[10px] text-emerald-400 font-bold uppercase">Match {idx + 1}</span>
@@ -164,7 +164,7 @@ export default function RegexTesterView() {
                     </div>
                     <div className="text-slate-200 font-bold break-all">"{item.value}"</div>
                     {item.groups.length > 0 && (
-                      <div className="text-[10px] text-slate-450 border-t border-slate-850 pt-1.5">
+                      <div className="text-[10px] text-slate-400 border-t border-slate-800 pt-1.5">
                         Group captures: {item.groups.map((g, gIdx) => `[${gIdx+1}]: "${g}"`).join(', ')}
                       </div>
                     )}

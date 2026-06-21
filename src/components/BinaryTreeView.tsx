@@ -90,7 +90,7 @@ export default function BinaryTreeView() {
         Binary Division Tree Converter
       </h2>
 
-      <p className="text-xs text-slate-450 mb-6 font-sans">
+      <p className="text-xs text-slate-400 mb-6 font-sans">
         Observe the mathematical remainder division sequence that translates decimal bases to bits, illustrated as an active recursion nodes layout.
       </p>
 
@@ -104,7 +104,7 @@ export default function BinaryTreeView() {
             max={100}
             value={val}
             onChange={(e) => setVal(parseInt(e.target.value) || 0)}
-            className="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-xs text-slate-200 outline-none focus:border-indigo-505 focus:border-indigo-500 transition font-mono"
+            className="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-xs text-slate-200 outline-none focus:border-indigo-500 transition font-mono"
             placeholder="e.g. 42"
           />
         </div>

@@ -46,7 +46,7 @@ export default function Base64View() {
         Base64 Binary Encoder & Decoder
       </h2>
 
-      <p className="text-xs text-slate-450 mb-6 font-sans">
+      <p className="text-xs text-slate-400 mb-6 font-sans">
         Encode regular plaintext messages into standardized 6-bit Base64 index representations, or decode existing streams.
       </p>
 
@@ -55,7 +55,7 @@ export default function Base64View() {
         <button
           onClick={() => handleModeChange('encode')}
           className={`flex-1 text-[11px] uppercase tracking-wider font-bold transition-all cursor-pointer ${
-            mode === 'encode' ? 'bg-indigo-650 bg-indigo-600 text-white' : 'bg-slate-950 text-slate-400 hover:bg-slate-900'
+            mode === 'encode' ? 'bg-indigo-600 text-white' : 'bg-slate-950 text-slate-400 hover:bg-slate-900'
           }`}
         >
           Encode Normal to Base64
@@ -63,7 +63,7 @@ export default function Base64View() {
         <button
           onClick={() => handleModeChange('decode')}
           className={`flex-1 text-[11px] uppercase tracking-wider font-bold transition-all cursor-pointer ${
-            mode === 'decode' ? 'bg-indigo-650 bg-indigo-600 text-white' : 'bg-slate-950 text-slate-400 hover:bg-slate-900'
+            mode === 'decode' ? 'bg-indigo-600 text-white' : 'bg-slate-950 text-slate-400 hover:bg-slate-900'
           }`}
         >
           Decode Base64 to Normal
@@ -89,7 +89,7 @@ export default function Base64View() {
         </div>
 
         {errorText && (
-          <div className="p-3 bg-rose-955 border border-rose-800 text-rose-400 rounded-lg text-xs font-semibold">
+          <div className="p-3 bg-rose-950 border border-rose-800 text-rose-400 rounded-lg text-xs font-semibold">
             {errorText}
           </div>
         )}

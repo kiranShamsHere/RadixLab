@@ -44,7 +44,7 @@ export default function UuidGeneratorView() {
         UUID Version-4 Token Generator
       </h2>
 
-      <p className="text-xs text-slate-450 mb-6 font-sans">
+      <p className="text-xs text-slate-400 mb-6 font-sans">
         Generate multiple universally unique identifiers (UUID version-4) with high-entropy cryptographic seeds.
       </p>
 

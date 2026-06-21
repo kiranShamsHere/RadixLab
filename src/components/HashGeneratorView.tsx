@@ -47,7 +47,7 @@ export default function HashGeneratorView() {
         Cryptographic Hash Generator
       </h2>
 
-      <p className="text-xs text-slate-450 mb-6 font-sans">
+      <p className="text-xs text-slate-400 mb-6 font-sans">
         Hash raw text lines locally into cryptographically secure digest signatures using native browser standards.
       </p>
 
@@ -71,7 +71,7 @@ export default function HashGeneratorView() {
             <span className="text-[10px] text-indigo-400 font-bold uppercase tracking-wider">SHA-256 Digest</span>
             <button
               onClick={() => copyToClipboard(sha256Value, 'sha256')}
-              className="text-[10px] text-slate-450 flex items-center gap-1 cursor-pointer hover:text-indigo-300"
+              className="text-[10px] text-slate-400 flex items-center gap-1 cursor-pointer hover:text-indigo-300"
             >
               <Copy className="w-3.5 h-3.5" />
               {copiedAlg === 'sha256' ? 'Copied Hash' : 'Copy signature'}
@@ -88,7 +88,7 @@ export default function HashGeneratorView() {
             <span className="text-[10px] text-indigo-400 font-bold uppercase tracking-wider">SHA-1 Digest</span>
             <button
               onClick={() => copyToClipboard(sha1Value, 'sha1')}
-              className="text-[10px] text-slate-450 flex items-center gap-1 cursor-pointer hover:text-indigo-300"
+              className="text-[10px] text-slate-400 flex items-center gap-1 cursor-pointer hover:text-indigo-300"
             >
               <Copy className="w-3.5 h-3.5" />
               {copiedAlg === 'sha1' ? 'Copied Hash' : 'Copy signature'}
@@ -105,7 +105,7 @@ export default function HashGeneratorView() {
             <span className="text-[10px] text-indigo-400 font-bold uppercase tracking-wider">SHA-512 Signature</span>
             <button
               onClick={() => copyToClipboard(sha512Value, 'sha512')}
-              className="text-[10px] text-slate-450 flex items-center gap-1 cursor-pointer hover:text-indigo-300"
+              className="text-[10px] text-slate-400 flex items-center gap-1 cursor-pointer hover:text-indigo-300"
             >
               <Copy className="w-3.5 h-3.5" />
               {copiedAlg === 'sha512' ? 'Copied Hash' : 'Copy signature'}

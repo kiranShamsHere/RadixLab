@@ -187,7 +187,7 @@ export default function ColorConverterView() {
         Developer Color Code Converter
       </h2>
 
-      <p className="text-xs text-slate-450 mb-6 font-sans">
+      <p className="text-xs text-slate-400 mb-6 font-sans">
         Seamlessly translate visual colors between hex, digital RGB bit ranges, hardware CMYK percentages, and HSL modes.
       </p>
 

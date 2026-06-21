@@ -26,6 +26,7 @@ import BitPatternsView from './components/BitPatternsView';
 import NumberLineView from './components/NumberLineView';
 import BinaryTreeView from './components/BinaryTreeView';
 import BytesBitsView from './components/BytesBitsView';
+import AnalyticsView from './components/AnalyticsView';
 import VoiceDictationModal from './components/VoiceDictationModal';
 import LegalModal from './components/LegalModal';
 import { motion, AnimatePresence } from 'motion/react';
@@ -67,7 +68,8 @@ import {
   MessageSquare,
   Mic,
   MicOff,
-  Settings
+  Settings,
+  BarChart3
 } from 'lucide-react';
 import { triggerHaptic, triggerSuccessBeep } from './utils/haptics';
 import { parseSpeechToNumber } from './utils/speech';
@@ -90,6 +92,7 @@ const MENU_GROUPS: MenuGroup[] = [
       { id: 'calculator', label: 'Base Calculator', icon: Calculator, color: 'text-indigo-400' },
       { id: 'scientific', label: 'Scientific Calc', icon: Calculator, color: 'text-indigo-400' },
       { id: 'batch', label: 'Batch Convert', icon: Layers, color: 'text-indigo-400' },
+      { id: 'analytics', label: 'Telemetry Diagnostics', icon: BarChart3, color: 'text-indigo-400' },
       { id: 'learn', label: 'Quiz & Practice', icon: GraduationCap, color: 'text-indigo-400' },
     ],
   },
@@ -432,6 +435,8 @@ export default function App() {
         return <BinaryTreeView />;
       case 'bytesbits':
         return <BytesBitsView />;
+      case 'analytics':
+        return <AnalyticsView history={history} onClearHistory={handleClearHistory} />;
       default:
         return (
           <ConverterView

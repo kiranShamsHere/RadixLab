@@ -136,7 +136,7 @@ export default function ScientificCalculatorView() {
         Scientific Hardware Calculator
       </h2>
 
-      <p className="text-xs text-slate-450 mb-6">
+      <p className="text-xs text-slate-400 mb-6">
         Perform standard algebraic, trigonometric, and memory register actions on physical decibels.
       </p>
 
@@ -177,7 +177,7 @@ export default function ScientificCalculatorView() {
         />
 
         {errorMsg && (
-          <div className="p-3 bg-rose-955 border border-rose-800 text-rose-400 rounded-lg text-xs flex items-center gap-2 font-semibold">
+          <div className="p-3 bg-rose-950 border border-rose-800 text-rose-400 rounded-lg text-xs flex items-center gap-2 font-semibold">
             <AlertCircle className="w-4 h-4" />
             <span>{errorMsg}</span>
           </div>
@@ -191,7 +191,7 @@ export default function ScientificCalculatorView() {
         <button onClick={() => handleMemory('mr')} className="py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-indigo-400 rounded-lg text-xs font-bold uppercase tracking-wider cursor-pointer">MR</button>
         <button onClick={() => handleMemory('m+')} className="py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-indigo-400 rounded-lg text-xs font-bold uppercase tracking-wider cursor-pointer">M+</button>
         <button onClick={() => handleMemory('m-')} className="py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-indigo-400 rounded-lg text-xs font-bold uppercase tracking-wider cursor-pointer">M-</button>
-        <button onClick={handleClear} className="py-2.5 bg-rose-955 hover:bg-rose-900 border border-rose-800 text-rose-300 rounded-lg text-xs font-bold uppercase tracking-wider cursor-pointer">C</button>
+        <button onClick={handleClear} className="py-2.5 bg-rose-950 hover:bg-rose-900 border border-rose-800 text-rose-300 rounded-lg text-xs font-bold uppercase tracking-wider cursor-pointer">C</button>
 
         {/* Row 2 Trig */}
         <button onClick={() => applyMathFunc('sin')} className="py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-slate-300 rounded-lg text-xs font-mono cursor-pointer">sin</button>
@@ -212,28 +212,28 @@ export default function ScientificCalculatorView() {
         <button onClick={() => appendToDisplay('7')} className="py-2.5 bg-slate-950 hover:bg-slate-850 text-slate-100 rounded-lg text-sm font-bold font-mono cursor-pointer">7</button>
         <button onClick={() => appendToDisplay('8')} className="py-2.5 bg-slate-950 hover:bg-slate-850 text-slate-100 rounded-lg text-sm font-bold font-mono cursor-pointer">8</button>
         <button onClick={() => appendToDisplay('9')} className="py-2.5 bg-slate-950 hover:bg-slate-850 text-slate-100 rounded-lg text-sm font-bold font-mono cursor-pointer">9</button>
-        <button onClick={() => appendToDisplay('/')} className="py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-indigo-405 rounded-lg text-sm font-bold font-mono cursor-pointer">÷</button>
+        <button onClick={() => appendToDisplay('/')} className="py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-indigo-400 rounded-lg text-sm font-bold font-mono cursor-pointer">÷</button>
 
         {/* Row 5 */}
         <button onClick={() => applyMathFunc('log')} className="py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-slate-300 rounded-lg text-xs font-mono cursor-pointer">log</button>
         <button onClick={() => appendToDisplay('4')} className="py-2.5 bg-slate-950 hover:bg-slate-850 text-slate-100 rounded-lg text-sm font-bold font-mono cursor-pointer">4</button>
         <button onClick={() => appendToDisplay('5')} className="py-2.5 bg-slate-950 hover:bg-slate-850 text-slate-100 rounded-lg text-sm font-bold font-mono cursor-pointer">5</button>
         <button onClick={() => appendToDisplay('6')} className="py-2.5 bg-slate-950 hover:bg-slate-850 text-slate-100 rounded-lg text-sm font-bold font-mono cursor-pointer">6</button>
-        <button onClick={() => appendToDisplay('*')} className="py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-indigo-405 rounded-lg text-sm font-bold font-mono cursor-pointer">×</button>
+        <button onClick={() => appendToDisplay('*')} className="py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-indigo-400 rounded-lg text-sm font-bold font-mono cursor-pointer">×</button>
 
         {/* Row 6 */}
         <button onClick={() => appendToDisplay('^')} className="py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-slate-300 rounded-lg text-xs font-mono cursor-pointer">xʸ</button>
         <button onClick={() => appendToDisplay('1')} className="py-2.5 bg-slate-950 hover:bg-slate-850 text-slate-100 rounded-lg text-sm font-bold font-mono cursor-pointer">1</button>
         <button onClick={() => appendToDisplay('2')} className="py-2.5 bg-slate-950 hover:bg-slate-850 text-slate-100 rounded-lg text-sm font-bold font-mono cursor-pointer">2</button>
         <button onClick={() => appendToDisplay('3')} className="py-2.5 bg-slate-950 hover:bg-slate-850 text-slate-100 rounded-lg text-sm font-bold font-mono cursor-pointer">3</button>
-        <button onClick={() => appendToDisplay('-')} className="py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-indigo-405 rounded-lg text-sm font-bold font-mono cursor-pointer">−</button>
+        <button onClick={() => appendToDisplay('-')} className="py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-indigo-400 rounded-lg text-sm font-bold font-mono cursor-pointer">−</button>
 
         {/* Row 7 */}
         <button onClick={() => applyMathFunc('sqrt')} className="py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-slate-300 rounded-lg text-xs font-mono cursor-pointer">√</button>
         <button onClick={() => appendToDisplay('0')} className="py-2.5 bg-slate-950 hover:bg-slate-850 text-slate-100 rounded-lg text-sm font-bold font-mono cursor-pointer">0</button>
         <button onClick={() => appendToDisplay('.')} className="py-2.5 bg-slate-950 hover:bg-slate-850 text-slate-100 rounded-lg text-sm font-bold font-mono cursor-pointer">.</button>
         <button onClick={handleBackspace} className="py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-indigo-400 rounded-lg text-xs font-bold uppercase tracking-wider cursor-pointer">⌫</button>
-        <button onClick={() => appendToDisplay('+')} className="py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-indigo-405 rounded-lg text-sm font-bold font-mono cursor-pointer">+</button>
+        <button onClick={() => appendToDisplay('+')} className="py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-indigo-400 rounded-lg text-sm font-bold font-mono cursor-pointer">+</button>
 
         {/* Row 8 Extra Science */}
         <button onClick={() => applyMathFunc('sqr')} className="py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-slate-300 rounded-lg text-xs font-mono cursor-pointer">x²</button>

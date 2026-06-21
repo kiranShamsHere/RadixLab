@@ -158,7 +158,7 @@ export default function CalculatorView() {
           <div className="flex justify-between">
             <label className="text-[10px] uppercase tracking-wider font-bold text-slate-400">Operand 1</label>
             {!isValid1 && (
-              <span className="text-[9px] uppercase tracking-wider font-bold text-rose-450 px-2 py-0.5 bg-rose-955 rounded">
+              <span className="text-[9px] uppercase tracking-wider font-bold text-rose-400 px-2 py-0.5 bg-rose-950/40 rounded border border-rose-900/40">
                 Invalid
               </span>
             )}
@@ -195,7 +195,7 @@ export default function CalculatorView() {
           <div className="flex justify-between">
             <label className="text-[10px] uppercase tracking-wider font-bold text-slate-400">Operand 2</label>
             {!isValid2 && (
-              <span className="text-[9px] uppercase tracking-wider font-bold text-rose-450 px-2 py-0.5 bg-rose-955 rounded">
+              <span className="text-[9px] uppercase tracking-wider font-bold text-rose-400 px-2 py-0.5 bg-rose-950/40 rounded border border-rose-900/40">
                 Invalid
               </span>
             )}

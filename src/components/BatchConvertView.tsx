@@ -156,7 +156,7 @@ export default function BatchConvertView() {
         Batch Number Converter
       </h2>
 
-      <p className="text-xs text-slate-450 mb-6">
+      <p className="text-xs text-slate-400 mb-6">
         Convert multiple numerical entries simultaneously using range sequences or custom input distributions.
       </p>
 
@@ -239,7 +239,7 @@ export default function BatchConvertView() {
         {inputMethod === 'file' && (
           <div className="border border-dashed border-slate-700 rounded-lg p-6 text-center hover:border-indigo-500 transition">
             <FileText className="w-8 h-8 text-slate-500 mx-auto mb-2" />
-            <p className="text-xs text-slate-450 mb-3">Upload plain text file with one value per line.</p>
+            <p className="text-xs text-slate-400 mb-3">Upload plain text file with one value per line.</p>
             <input
               type="file"
               accept=".txt,.csv"
@@ -369,10 +369,10 @@ export default function BatchConvertView() {
                   <tr key={r.serial} className="hover:bg-slate-950/40">
                     <td className="py-2 px-4 text-center text-slate-500">{r.serial}</td>
                     <td className="py-2 px-4 text-slate-300 font-bold">{r.input}</td>
-                    <td className="py-2 px-4 text-indigo-450 font-bold">{r.to}</td>
+                    <td className="py-2 px-4 text-indigo-400 font-bold">{r.to}</td>
                     <td className="py-2 px-4 text-center">
                       <span className={`px-2 py-0.5 text-[9px] uppercase font-bold rounded ${
-                        r.valid ? 'bg-emerald-950/50 text-emerald-400' : 'bg-rose-955/50 text-rose-405'
+                        r.valid ? 'bg-emerald-950/50 text-emerald-400' : 'bg-rose-950/50 text-rose-400'
                       }`}>
                         {r.valid ? 'Valid' : 'Invalid'}
                       </span>

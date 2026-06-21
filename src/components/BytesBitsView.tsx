@@ -58,7 +58,7 @@ export default function BytesBitsView() {
         Data Storage Bytes & Bits Converter
       </h2>
 
-      <p className="text-xs text-slate-450 mb-6 font-sans">
+      <p className="text-xs text-slate-400 mb-6 font-sans">
         Compare storage magnitudes, highlighting differences between decimal prefix (10<sup>3</sup>) and binary SI standards (2<sup>10</sup>).
       </p>
 

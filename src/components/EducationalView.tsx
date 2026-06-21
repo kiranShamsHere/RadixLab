@@ -83,7 +83,7 @@ export default function EducationalView() {
           <Award className="w-4 h-4 text-indigo-400" />
           Interactive DLD Base-Conversion Quiz
         </h2>
-        <p className="text-xs text-slate-450 mb-6 font-sans">
+        <p className="text-xs text-slate-400 mb-6 font-sans">
           Test your memory and logic conversion speed on standard Computer Science and digital design questions.
         </p>
 

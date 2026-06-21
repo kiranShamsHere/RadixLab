@@ -46,7 +46,7 @@ export default function SignedComplementView() {
         <ToggleLeft className="w-4 h-4 text-indigo-400" />
         1's & 2's Complement Signed Calculator
       </h2>
-      <p className="text-xs text-slate-450 mb-6 font-sans">
+      <p className="text-xs text-slate-400 mb-6 font-sans">
         Explore signed integer representations used in digital micro-architectures. Track active bits and sign extensions.
       </p>
 
@@ -87,7 +87,7 @@ export default function SignedComplementView() {
       </div>
 
       {errorMsg && (
-        <div className="p-4 bg-rose-955/65 border border-rose-800 rounded-lg text-xs text-rose-400 mb-6 font-semibold">
+        <div className="p-4 bg-rose-950/60 border border-rose-800 rounded-lg text-xs text-rose-400 mb-6 font-semibold">
           {errorMsg}
         </div>
       )}
@@ -120,7 +120,7 @@ export default function SignedComplementView() {
 
           {/* Interactive Bit-Extended visualizer sequence logic */}
           <div className="bg-slate-950 border border-slate-800 rounded-lg p-5">
-            <h3 className="text-xs font-semibold text-slate-450 mb-4 inline-flex items-center gap-1.5 uppercase tracking-wide">
+            <h3 className="text-xs font-semibold text-slate-400 mb-4 inline-flex items-center gap-1.5 uppercase tracking-wide">
               <PlayCircle className="w-4 h-4 text-indigo-400" />
               Bus Bit Matrix & Sign Extension
             </h3>

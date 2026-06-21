@@ -39,7 +39,7 @@ export default function IEEE754View() {
         <Cpu className="w-4 h-4 text-indigo-400" />
         IEEE 754 Floating-Point Representation
       </h2>
-      <p className="text-xs text-slate-450 mb-6 font-sans">
+      <p className="text-xs text-slate-400 mb-6 font-sans">
         Analyze how real decimals are packed in computer hardware into sign, exponent, and fraction bit segments.
       </p>
 
@@ -62,7 +62,7 @@ export default function IEEE754View() {
             <button
               onClick={() => setIs64Bit(false)}
               className={`flex-1 text-xs font-mono font-bold transition cursor-pointer ${
-                !is64Bit ? 'bg-indigo-605 bg-indigo-600 text-white' : 'bg-slate-950 text-slate-450 hover:bg-slate-900'
+                !is64Bit ? 'bg-indigo-600 text-white' : 'bg-slate-950 text-slate-400 hover:bg-slate-900'
               }`}
             >
               32-Bit
@@ -70,7 +70,7 @@ export default function IEEE754View() {
             <button
               onClick={() => setIs64Bit(true)}
               className={`flex-1 text-xs font-mono font-bold transition cursor-pointer ${
-                is64Bit ? 'bg-indigo-605 bg-indigo-600 text-white' : 'bg-slate-950 text-slate-450 hover:bg-slate-900'
+                is64Bit ? 'bg-indigo-600 text-white' : 'bg-slate-950 text-slate-400 hover:bg-slate-900'
               }`}
             >
               64-Bit
@@ -80,7 +80,7 @@ export default function IEEE754View() {
       </div>
 
       {errorMsg && (
-        <div className="p-4 bg-rose-955/65 border border-rose-800 rounded-lg text-xs text-rose-400 mb-6 font-semibold">
+        <div className="p-4 bg-rose-950/60 border border-rose-800 rounded-lg text-xs text-rose-400 mb-6 font-semibold">
           {errorMsg}
         </div>
       )}
