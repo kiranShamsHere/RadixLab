@@ -3,6 +3,7 @@ import { Mic, MicOff, X, Sparkles, Check, RotateCcw, Play, Compass, HelpCircle }
 import { triggerHaptic } from '../utils/haptics';
 import { parseSpeechToNumber } from '../utils/speech';
 import { motion } from 'motion/react';
+import { useModalClose } from '../hooks/useModalClose';
 
 interface VoiceDictationModalProps {
   theme: 'dark' | 'light';
@@ -27,6 +28,16 @@ export default function VoiceDictationModal({ theme, onClose, onDeploy }: VoiceD
   const [activePresetIndex, setActivePresetIndex] = useState<number | null>(null);
 
   const recognitionRef = useRef<any>(null);
+
+  const modalRef = useModalClose<HTMLDivElement>({
+    isOpen: true,
+    onClose,
+    closeOnOutsideClick: true,
+    closeOnEscape: true,
+    closeOnScroll: false,
+    lockScroll: true,
+    trapFocus: true,
+  });
 
   // Initialize SpeechRecognition
   useEffect(() => {
@@ -120,9 +131,10 @@ export default function VoiceDictationModal({ theme, onClose, onDeploy }: VoiceD
     <motion.div 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="fixed inset-0 z-55 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4"
+      className="fixed inset-0 z-55 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4 animate-fadeIn"
     >
       <motion.div 
+        ref={modalRef}
         initial={{ scale: 0.9, y: 20, opacity: 0 }}
         animate={{ scale: 1, y: 0, opacity: 1 }}
         transition={{ type: 'spring', stiffness: 220, damping: 20 }}

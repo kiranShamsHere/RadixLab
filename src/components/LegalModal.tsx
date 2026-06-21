@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { X, Shield, Scale, Info, FileText, Check, ShieldCheck, Cookie, Heart } from 'lucide-react';
 import { triggerHaptic } from '../utils/haptics';
 import { motion } from 'motion/react';
+import { useModalClose } from '../hooks/useModalClose';
 
 interface LegalModalProps {
   theme: 'dark' | 'light';
@@ -12,6 +13,16 @@ interface LegalModalProps {
 
 export default function LegalModal({ theme, isOpen, onClose, initialTab = 'terms' }: LegalModalProps) {
   const [activeTab, setActiveTab] = useState<'terms' | 'privacy' | 'cookies' | 'license'>(initialTab);
+  
+  const modalRef = useModalClose<HTMLDivElement>({
+    isOpen,
+    onClose,
+    closeOnOutsideClick: true,
+    closeOnEscape: true,
+    closeOnScroll: false,
+    lockScroll: true,
+    trapFocus: true,
+  });
 
   if (!isOpen) return null;
 
@@ -26,9 +37,10 @@ export default function LegalModal({ theme, isOpen, onClose, initialTab = 'terms
     <motion.div 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="fixed inset-0 z-55 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4"
+      className="fixed inset-0 z-55 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4 animate-fadeIn"
     >
       <motion.div 
+        ref={modalRef}
         initial={{ scale: 0.92, y: 15, opacity: 0 }}
         animate={{ scale: 1, y: 0, opacity: 1 }}
         transition={{ type: 'spring', stiffness: 200, damping: 20 }}
